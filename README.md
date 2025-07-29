@@ -1,5 +1,7 @@
 To create the required SQL Server database for this API, run the following script in SSMS:
 
+
+```sql
 CREATE DATABASE StudentManagement;
 
 CREATE TABLE Students (
