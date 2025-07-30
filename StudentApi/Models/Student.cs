@@ -13,5 +13,5 @@ public partial class Student
 
     public string? Email { get; set; }
 
-    public DateOnly? EnrollmentDate { get; set; }
+    public string? Department { get; set; }
 }

@@ -24,8 +24,16 @@ namespace StudentApi
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Student>>> GetStudents()
         {
-            return await _context.Students.ToListAsync();
+            try
+            {
+                return await _context.Students.ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
+
 
         // GET: api/Students/5
         [HttpGet("{id}")]
