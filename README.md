@@ -9,5 +9,5 @@ CREATE TABLE Students (
     Name NVARCHAR(100) NOT NULL,
     Age INT NOT NULL,
     Email NVARCHAR(100),
-    EnrollmentDate DATE
+    Department NVARCHAR(100) NULL
 );
